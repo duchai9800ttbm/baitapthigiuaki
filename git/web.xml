@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+	<display-name>demo1</display-name>
+
+	<servlet>
+    	<servlet-name>book</servlet-name>
+    	<servlet-class>Controller.ControllerServlet</servlet-class>
+  	</servlet>
+  	
+  	<servlet-mapping>
+    	<servlet-name>book</servlet-name>
+    	<url-pattern>/</url-pattern>
+  	</servlet-mapping>
+  	
+  	<context-param>
+    	<param-name>hostName</param-name>
+    	<param-value>localhost</param-value>
+  	</context-param>
+  
+  	<context-param>
+    	<param-name>port</param-name>
+    	<param-value>1433</param-value>
+  	</context-param>
+  
+  	<context-param>
+    	<param-name>sqlInstanceName</param-name>
+    	<param-value>MSSQLSERVER</param-value>
+  	</context-param>
+  	
+  	<context-param>
+    	<param-name>userName</param-name>
+    	<param-value>sa</param-value>
+  	</context-param>
+  
+  	<context-param>
+    	<param-name>password</param-name>
+    	<param-value>Duchai9800</param-value>
+  	</context-param>
+  	
+  	<context-param>
+    	<param-name>database</param-name>
+    	<param-value>db_book</param-value>
+  	</context-param>
+</web-app>
